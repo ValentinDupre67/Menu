@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             rows.forEach(row => {
                 const [key, price] = row;
-                const priceElement = document.querySelector(`[data-price="${key}"]`);
+                const priceElement = document.querySelector(`[data-price='${key}']`);
                 if (priceElement) {
                     priceElement.textContent = `$${price}`;
                 }
