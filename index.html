@@ -3,12 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú del Restaurante</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS -->
+    <title>Cuervo Negro - Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="menu-container">
-        <img src="images/menu.png" alt="Menú del Restaurante" class="menu-image">
+    <div class="container">
+        <header>
+            <h1>Cuervo Negro</h1>
+            <nav>
+                <div class="nav-buttons">
+                    <button data-section="cerveza">Cerveza</button>
+                    <button data-section="hamburguesas">Hamburguesas</button>
+                    <button data-section="tragos">Tragos</button>
+                    <button data-section="papas">Papas</button>
+                    <button data-section="entradas">Entradas</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="cerveza" class="menu-section">
+                <h2>Cerveza</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span>Saison Lambic</span>
+                        <span class="price" data-price="cerveza-saison"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Berliner</span>
+                        <span class="price" data-price="cerveza-berliner"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Weisse</span>
+                        <span class="price" data-price="cerveza-weisse"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Pale Ale</span>
+                        <span class="price" data-price="cerveza-pale-ale"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>India Pale Ale (IPA)</span>
+                        <span class="price" data-price="cerveza-ipa"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Porter</span>
+                        <span class="price" data-price="cerveza-porter"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Stout</span>
+                        <span class="price" data-price="cerveza-stout"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hamburguesas" class="menu-section">
+                <h2>Hamburguesas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span>La Cuervo</span>
+                        <span class="price" data-price="hamburguesa-cuervo"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>La Clasica</span>
+                        <span class="price" data-price="hamburguesa-clasica"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Completa</span>
+                        <span class="price" data-price="hamburguesa-completa"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Black Owl</span>
+                        <span class="price" data-price="hamburguesa-black-owl"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tragos" class="menu-section">
+                <h2>Tragos</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span>Gin Tonic</span>
+                        <span class="price" data-price="trago-gin-tonic"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Cuba Libre</span>
+                        <span class="price" data-price="trago-cuba-libre"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Tequila Sunrise</span>
+                        <span class="price" data-price="trago-tequila-sunrise"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Negroni</span>
+                        <span class="price" data-price="trago-negroni"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Martini</span>
+                        <span class="price" data-price="trago-martini"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Bloody Mary</span>
+                        <span class="price" data-price="trago-bloody-mary"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Sex on the Beach</span>
+                        <span class="price" data-price="trago-sex-on-the-beach"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Long Island Iced Tea</span>
+                        <span class="price" data-price="trago-long-island"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Cosmopolitan</span>
+                        <span class="price" data-price="trago-cosmopolitan"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="papas" class="menu-section">
+                <h2>Papas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span>Las Cuervo</span>
+                        <span class="price" data-price="papas-cuervo"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Rusticas</span>
+                        <span class="price" data-price="papas-rusticas"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Chedar y Panceta</span>
+                        <span class="price" data-price="papas-chedar-panceta"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Desmechadas de Cerdo</span>
+                        <span class="price" data-price="papas-desmechadas"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="entradas" class="menu-section">
+                <h2>Entradas</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <span>Aros de Cebolla</span>
+                        <span class="price" data-price="entrada-aros-cebolla"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Nachos</span>
+                        <span class="price" data-price="entrada-nachos"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Bruschetta</span>
+                        <span class="price" data-price="entrada-bruschetta"></span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Alitas de Pollo</span>
+                        <span class="price" data-price="entrada-alitas"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
