@@ -23,6 +23,18 @@ header {
     margin-bottom: 20px;
 }
 
+.header-container {
+    display: inline-flex;        
+}
+
+.logo {
+    width: 40px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px; /* Ajusta el espacio entre el logo y el título */
+    border-radius: 10px; /* Redondea las puntas del logo */
+}
+
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
@@ -62,7 +74,7 @@ h1 {
 
 .nav-buttons button.active {
     background-color: #000000;  /* Black background */
-    color: #f4e113;  /* White text */
+    color: rgb(19, 255, 243);  /* White text */
 }
 
 
@@ -117,7 +129,7 @@ h1 {
 }
 
 .price {
-    color: #eded0b;
+    color: rgb(19, 255, 243);
     font-weight: bold;
     font-size: 20px;    
 }
@@ -180,7 +192,7 @@ h1 {
     max-height: 90%;
     border-radius: 20px; /* Rounded corners for the content */
     overflow: hidden; /* Ensures image follows the rounded corners */
-    box-shadow: 0 10px 30px rgb(247, 255, 22); /* Added shadow for depth */
+    box-shadow: 0 10px 30px rgb(19, 255, 243); /* Added shadow for depth */
 }
 
 .overlay-image {
