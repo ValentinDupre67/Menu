@@ -28,9 +28,9 @@ header {
 }
 
 .logo {
-    width: 40px; /* Ajusta el tamaño del logo según tus necesidades */
-    height: 40px;
-    margin-top: 10px;
+    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 50px;
+    margin-top: initial;
     margin-right: 10px; /* Ajusta el espacio entre el logo y el título */
     border-radius: 10px; /* Redondea las puntas del logo */
 }
