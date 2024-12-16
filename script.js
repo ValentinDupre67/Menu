@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.nav-buttons button');
     const sections = document.querySelectorAll('.menu-section');
     
+     // Overlay handling
+     const imageOverlay = document.getElementById('image-overlay');
+     const closeOverlayBtn = document.getElementById('close-overlay');
+ 
+     // Show overlay on page load
+     imageOverlay.classList.remove('hidden');
+ 
+     // Close overlay when close button is clicked
+     closeOverlayBtn.addEventListener('click', () => {
+         imageOverlay.classList.add('hidden');
+     });
+
     // Default to showing first section
     sections[0].classList.add('active');
     buttons[0].classList.add('active');
